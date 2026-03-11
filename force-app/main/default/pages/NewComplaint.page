@@ -1,0 +1,8 @@
+<apex:page standardController="Case">
+
+    <h1>Sorry</h1>
+    <br/><br/>
+    You may not create a new Complaint record from here.<br/><br/>
+    Please navigate to the Customer's Account page, and use the 'Create New Complaint' section.
+
+</apex:page>
