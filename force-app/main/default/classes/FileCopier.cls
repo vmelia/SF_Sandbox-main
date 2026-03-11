@@ -1,11 +1,13 @@
 public with sharing class FileCopier {
-    private FileManager fileManager;
+
+    private FileManager _fileManager;
+
     public FileCopier(FileManager fileManager) {
-        this.fileManager = fileManager;
+        fileManager = fileManager;
     }
 
     public Boolean copyNumbers(String inputPath, String outputPath){
-        List<String> inputLines = fileManager.readFile(inputPath);
+        List<String> inputLines = _fileManager.readFile(inputPath);
         
         List<String> outputLines = new List<String>();
         for(String line: inputLines){
@@ -15,7 +17,7 @@ public with sharing class FileCopier {
         }
 
         if (!outputLines.isEmpty()){
-            fileManager.writeFile(outputPath, outputLines);
+            _fileManager.writeFile(outputPath, outputLines);
             return true;
         }
 

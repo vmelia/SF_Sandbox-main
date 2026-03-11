@@ -1,4 +1,5 @@
 public with sharing virtual class FileManager {
+    
     public virtual List<String> readFile(String path){
         // Code not required for this demo.
         return new List<String>();

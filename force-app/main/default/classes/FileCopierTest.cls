@@ -1,5 +1,6 @@
 @isTest
 private class FileCopierTest {
+    
     static fflib_ApexMocks apexMocks;
     static FileManager fileManager;
     static FileCopier fileCopier;
